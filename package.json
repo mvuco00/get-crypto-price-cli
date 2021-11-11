@@ -1,0 +1,27 @@
+{
+  "name": "cryptoprice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": "./bin/cryptoprice.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvuco00/get-crypto-price-cli.git"
+  },
+  "author": "Marija Vuco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mvuco00/get-crypto-price-cli/issues"
+  },
+  "homepage": "https://github.com/mvuco00/get-crypto-price-cli#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "colors": "^1.4.0",
+    "commander": "^8.3.0",
+    "configstore": "^6.0.0",
+    "inquirer": "^8.2.0"
+  }
+}
