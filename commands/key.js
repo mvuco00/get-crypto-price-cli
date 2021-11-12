@@ -25,8 +25,6 @@ const key = {
     try {
       const keyManager = new KeyManager();
       const key = keyManager.getKey();
-      console.log(key);
-
       console.log("Current API Key: ", key.yellow);
 
       return key;
@@ -35,7 +33,14 @@ const key = {
     }
   },
   remove() {
-    console.log("hello from remove");
+    try {
+      const keyManager = new KeyManager();
+      keyManager.deleteKey();
+
+      console.log("Api Key deleted".green);
+    } catch (e) {
+      console.error(err.message.red);
+    }
   },
 };
 
