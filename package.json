@@ -21,7 +21,7 @@
     "axios": "^0.24.0",
     "colors": "^1.4.0",
     "commander": "^8.3.0",
-    "configstore": "^6.0.0",
+    "configstore": "^5.0.1",
     "inquirer": "^8.2.0"
   }
 }

@@ -1,18 +1,14 @@
 const program = require("commander");
+const key = require("../commands/key");
 
-program
-  .command("set")
-  .description("Set API key")
-  .action(() => console.log("hi from set"));
+program.command("set").description("Set API key").action(key.set);
 
-program
-  .command("show")
-  .description("Show API key")
-  .action(() => console.log("hi from show"));
+program.command("show").description("Show API key").action(key.show);
 
-program
-  .command("remove")
-  .description("Remove API key")
-  .action(() => console.log("hi from remove"));
+program.command("remove").description("Remove API key").action(key.remove);
 
 program.parse(process.argv);
+
+if (!process.argv[2]) {
+  program.outputHelp();
+}
